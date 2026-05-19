@@ -1,0 +1,1843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Meta Tags for SEO -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Wolokoso Saving Group - A trusted community saving platform in Butaleja-Doho. Save money securely with flexible payment methods. Join our growing savings community today!">
+<meta name="keywords" content="saving group, community savings, SACCO, Butaleja, Doho, Uganda, savings plan, money management">
+<meta name="author" content="Wolokoso Saving Group">
+<meta name="robots" content="index, follow">
+<meta name="language" content="English">
+<meta name="revisit-after" content="7 days">
+
+<!-- Open Graph Meta Tags (for social sharing) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Wolokoso Saving Group - Build Tomorrow, Save Today">
+<meta property="og:description" content="Join Wolokoso Saving Group and start building your financial future with a trusted community savings platform.">
+<meta property="og:url" content="https://yourwebsite.com">
+<meta property="og:image" content="https://yourwebsite.com/og-image.jpg">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Wolokoso Saving Group">
+<meta name="twitter:description" content="Secure community savings platform in Butaleja-Doho, Uganda">
+<meta name="twitter:image" content="https://yourwebsite.com/twitter-image.jpg">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://yourwebsite.com/">
+
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="style.css">
+<title>Wolokoso Saving Group | Secure Community Savings Platform</title>
+
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+(function(){
+emailjs.init("WZkh6TOGm7QQDLgSa");
+})();
+</script>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VEFBN2CM65"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-VEFBN2CM65');
+</script>
+
+<!-- Schema.org Structured Data -->
+  <script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Wolokoso Saving Group",
+  "description": "Community saving and investment group in Butaleja-Doho, Uganda",
+  "url": "https://yourwebsite.com",
+  "logo": "https://yourwebsite.com/logo.png",
+  "sameAs": [
+    "https://www.facebook.com/wolokoso",
+    "https://www.instagram.com/wolokoso",
+    "https://wa.me/256788038536"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Butaleja-Doho",
+    "addressCountry": "UG"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Customer Service",
+    "telephone": "+256788038536",
+    "email": "wolokososavinggroup@gmail.com"
+  }
+}
+</script>
+</head>
+<body>
+
+<div class="container">
+<!-- HEADER -->
+<div class="header">
+<h1>💰 Wolokoso Saving Group</h1>
+<p class="subtitle">Building Tomorrow, Saving Today</p>
+<p class="header-description">Join Uganda's most trusted community savings platform</p>
+</div>
+
+<!-- INFO BOX -->
+<div class="info-box">
+<p><strong>📍 Location:</strong> Butaleja-Doho, Uganda<br>
+<strong>📧 Email:</strong> <a href="mailto:wolokososavinggroup@gmail.com">wolokososavinggroup@gmail.com</a><br>
+<strong>📱 WhatsApp:</strong> <a href="https://wa.me/256788038536" target="_blank">+256 788 038 536</a></p>
+</div>
+
+<!-- ANNOUNCEMENT BANNER -->
+<div class="announcement-banner" id="announcement">
+<span id="announcementText">📢 Welcome to Wolokoso Saving Group - Secure your financial future today!</span>
+<button class="close-announcement" onclick="closeAnnouncement()">&times;</button>
+</div>
+
+<!-- TABS NAVIGATION -->
+<div class="tabs" role="tablist">
+<button class="tab-btn active" data-tab="form" role="tab" aria-selected="true" aria-controls="form">💰 Save Money</button>
+<button class="tab-btn" data-tab="stats" role="tab" aria-selected="false" aria-controls="stats">📊 My Savings</button>
+<button class="tab-btn" data-tab="members" role="tab" aria-selected="false" aria-controls="members">👥 Members</button>
+<button class="tab-btn" data-tab="about" role="tab" aria-selected="false" aria-controls="about">ℹ️ About Us</button>
+<button class="tab-btn" data-tab="help" role="tab" aria-selected="false" aria-controls="help">❓ Help</button>
+</div>
+
+<!-- SAVE MONEY TAB -->
+<div id="form" class="tab-content active" role="tabpanel">
+<h2>Make a Savings Deposit</h2>
+<form id="savingForm">
+
+<label for="date">Date:</label>
+<input type="date" id="date" name="date" required aria-label="Savings date">
+
+<label for="name">Full Name:</label>
+<input type="text" id="name" name="name" placeholder="Your full name" required aria-label="Full name">
+
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" placeholder="Your email address" required aria-label="Email address">
+
+<label for="phone">Phone:</label>
+<input type="tel" id="phone" name="phone" placeholder="Phone number (256...)" required aria-label="Phone number">
+
+<label for="amount">Saving Amount:</label>
+<div class="amount-input">
+<input type="number" id="amount" name="amount" placeholder="5000 - 1000000" min="5000" max="1000000" required aria-label="Saving amount">
+<span class="currency">UGX</span>
+</div>
+<small>Minimum: 5,000 | Maximum: 1,000,000</small>
+
+<label for="paymentMethod">Payment Method:</label>
+<select id="paymentMethod" name="paymentMethod" required aria-label="Payment method">
+<option value="">Select payment method</option>
+<option value="Mobile Money">Mobile Money (MTN/Airtel)</option>
+<option value="Bank Transfer">Bank Transfer</option>
+<option value="Cash">Cash Payment</option>
+<option value="Online Transfer">Online Transfer</option>
+</select>
+
+<label for="photo">Photo Receipt:</label>
+<div class="photo-upload" role="button" tabindex="0">
+<input type="file" id="photo" name="photo" accept="image/*" required aria-label="Upload payment receipt">
+<span class="upload-hint">📸 Upload payment receipt or proof</span>
+</div>
+<img id="preview" style="display:none;" alt="Receipt preview">
+
+<label class="checkbox">
+<input type="checkbox" name="terms" required>
+<span>I agree to the Wolokoso Saving Group terms & conditions</span>
+</label>
+
+<div class="form-actions">
+<button type="submit" class="btn-save">💾 Save Money</button>
+<button type="reset" class="btn-reset">🔄 Clear Form</button>
+</div>
+
+</form>
+</div>
+
+<!-- MY SAVINGS TAB -->
+<div id="stats" class="tab-content" role="tabpanel">
+<h2>Your Savings Dashboard</h2>
+<div class="stats-container">
+<div class="stat-card">
+<h3>Total Saved</h3>
+<p class="stat-value" id="totalSaved">0 UGX</p>
+</div>
+<div class="stat-card">
+<h3>Total Transactions</h3>
+<p class="stat-value" id="totalTransactions">0</p>
+</div>
+<div class="stat-card">
+<h3>Last Saved</h3>
+<p class="stat-value" id="lastSaved">N/A</p>
+</div>
+<div class="stat-card">
+<h3>Average Saving</h3>
+<p class="stat-value" id="averageSaved">0 UGX</p>
+</div>
+</div>
+
+<h3>Recent Transactions</h3>
+<div id="transactionsList" class="transactions-list">
+<p class="empty-message">No transactions yet. Start saving!</p>
+</div>
+
+<!-- EXPORT BUTTON -->
+<button class="btn-export" onclick="exportTransactions()">📥 Export as CSV</button>
+</div>
+
+<!-- MEMBERS TAB -->
+<div id="members" class="tab-content" role="tabpanel">
+<h2>Group Members Directory</h2>
+<div id="membersList" class="members-list">
+<p class="empty-message">Loading members...</p>
+</div>
+<p class="members-info">Total Members: <strong id="totalMembers">0</strong></p>
+</div>
+
+<!-- ABOUT US TAB -->
+<div id="about" class="tab-content" role="tabpanel">
+<h2>About Wolokoso Saving Group</h2>
+
+<div class="about-content">
+<h3>🎯 Our Mission</h3>
+<p>To empower community members by providing a secure, transparent, and inclusive platform for savings and financial growth.</p>
+
+<h3>💼 What We Do</h3>
+<ul>
+<li>Provide flexible savings plans for all income levels</li>
+<li>Offer competitive interest rates for members</li>
+<li>Organize financial literacy workshops</li>
+<li>Support emergency loans for qualified members</li>
+<li>Build a strong community of savers</li>
+</ul>
+
+<h3>✨ Why Choose Us?</h3>
+<ul>
+<li><strong>✅ Secure:</strong> Your money is safe with us</li>
+<li><strong>✅ Transparent:</strong> Clear terms and conditions</li>
+<li><strong>✅ Community-Driven:</strong> Decisions made by members</li>
+<li><strong>✅ Easy Access:</strong> Multiple payment methods</li>
+<li><strong>✅ Growth:</strong> Earn interest on your savings</li>
+</ul>
+
+<h3>📈 By The Numbers</h3>
+<p>Wolokoso Saving Group has helped over <strong id="membersCount">50+</strong> community members save <strong id="totalSavingsCount">millions</strong> of UGX.</p>
+</div>
+</div>
+
+<!-- HELP CENTER TAB -->
+<div id="help" class="tab-content" role="tabpanel">
+<h2>Help & Support</h2>
+
+<div class="help-box">
+<h3>👨‍💼 Chairperson</h3>
+<p>For general inquiries and group matters</p>
+<div class="contact-links">
+<a href="tel:0788038536" class="contact-btn phone">📞 Call</a>
+<a href="https://wa.me/256788038536" class="contact-btn whatsapp" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
+<a href="sms:0788038536" class="contact-btn sms">📱 SMS</a>
+</div>
+</div>
+
+<div class="help-box">
+<h3>📋 Secretary</h3>
+<p>For documentation and record inquiries</p>
+<div class="contact-links">
+<a href="tel:0757640767" class="contact-btn phone">📞 Call</a>
+<a href="https://wa.me/256757640767" class="contact-btn whatsapp" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
+<a href="sms:0757640767" class="contact-btn sms">📱 SMS</a>
+</div>
+</div>
+
+<div class="help-box">
+<h3>💵 Treasurer</h3>
+<p>For financial and payment inquiries</p>
+<div class="contact-links">
+<a href="tel:0765042710" class="contact-btn phone">📞 Call</a>
+<a href="https://wa.me/256765042710" class="contact-btn whatsapp" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
+<a href="sms:0758294286" class="contact-btn sms">📱 SMS</a>
+</div>
+</div>
+
+<!-- FAQ SECTION -->
+<div class="faq-box">
+<h3>❓ Frequently Asked Questions</h3>
+
+<details>
+<summary>What is the minimum saving amount?</summary>
+<p>The minimum saving amount is 5,000 UGX. You can save up to 1,000,000 UGX per transaction.</p>
+</details>
+
+<details>
+<summary>How long does it take to confirm my savings?</summary>
+<p>Your savings are confirmed within 24 hours after submission and verification by our treasurer.</p>
+</details>
+
+<details>
+<summary>What payment methods do you accept?</summary>
+<p>We accept Mobile Money (MTN/Airtel), Bank Transfers, Cash payments, and Online Transfers.</p>
+</details>
+
+<details>
+<summary>Can I withdraw my savings anytime?</summary>
+<p>Yes, you can withdraw your savings after completing 3 months of membership. Some conditions may apply.</p>
+</details>
+
+<details>
+<summary>Do you offer loans to members?</summary>
+<p>Yes! Members can access emergency loans at competitive rates. Contact the treasurer for more details.</p>
+</details>
+
+<details>
+<summary>How is interest calculated?</summary>
+<p>Interest is calculated quarterly on your total savings balance. Current rate: 5% per annum.</p>
+</details>
+
+<details>
+<summary>How can I join the group?</summary>
+<p>Contact any group official. You need to register, pay a one-time registration fee of 10,000 UGX, and make your first savings deposit.</p>
+</details>
+</div>
+
+<!-- SITEMAP NOTICE -->
+<div class="info-box" style="margin-top: 20px; background: #fff3cd; border-left-color: #ffc107;">
+<p><strong>📋 Site Information:</strong> <a href="sitemap.xml" target="_blank">View Sitemap</a> | <a href="robots.txt" target="_blank">View Robots.txt</a> | <a href="privacy.html" target="_blank">Privacy Policy</a></p>
+</div>
+</div>
+
+<!-- MODAL FOR PHOTO PREVIEW -->
+<div id="photoModal" class="modal">
+<div class="modal-content">
+<span class="close-modal" role="button" tabindex="0">&times;</span>
+<h3>Received Photo</h3>
+<img id="modalPhoto" src="" alt="Received payment receipt photo">
+<p id="modalInfo"></p>
+</div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+<div class="footer-content">
+<div class="footer-section">
+<h4>Quick Links</h4>
+<ul>
+<li><a href="#form">Save Money</a></li>
+<li><a href="#stats">My Savings</a></li>
+<li><a href="#help">Help Center</a></li>
+</ul>
+</div>
+<div class="footer-section">
+<h4>Contact</h4>
+<ul>
+<li>📍 Butaleja-Doho, Uganda</li>
+<li>📧 <a href="mailto:wolokososavinggroup26@gmail.com">Email Us</a></li>
+<li>💬 <a href="https://wa.me/256788038536" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+</ul>
+</div>
+<div class="footer-section">
+<h4>Legal</h4>
+<ul>
+<li><a href="privacy.html">Privacy Policy</a></li>
+<li><a href="terms.html">Terms & Conditions</a></li>
+</ul>
+</div>
+</div>
+<p class="copyright">© 2026 Wolokoso Saving Group. All rights reserved. <br>Building wealth together, one transaction at a time.</p>
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+<style>
+/* ============================================
+   WOLOKOSO SAVING GROUP - ENHANCED CSS
+   SEO & Accessibility Optimized
+   ============================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 20px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+  animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ============================================
+   HEADER
+   ============================================ */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 3px solid #667eea;
+  padding-bottom: 20px;
+}
+
+.header h1 {
+  color: #333;
+  font-size: 32px;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.subtitle {
+  color: #667eea;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.header-description {
+  color: #666;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* ============================================
+   INFO BOX
+   ============================================ */
+.info-box {
+  background: #f0f4ff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border-left: 4px solid #667eea;
+  font-size: 14px;
+  color: #333;
+}
+
+.info-box a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.info-box a:hover {
+  color: #764ba2;
+  text-decoration: underline;
+}
+
+/* ============================================
+   ANNOUNCEMENT BANNER
+   ============================================ */
+.announcement-banner {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: slideIn 0.5s ease-out;
+}
+
+.close-announcement {
+  background: rgba(255,255,255,0.3);
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0 8px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.close-announcement:hover {
+  background: rgba(255,255,255,0.5);
+}
+
+/* ============================================
+   TABS
+   ============================================ */
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #eee;
+  overflow-x: auto;
+  padding-bottom: 0;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  color: #999;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+  position: relative;
+  bottom: -2px;
+  white-space: nowrap;
+}
+
+.tab-btn:focus {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
+}
+
+.tab-btn.active {
+  color: #667eea;
+  border-bottom-color: #667eea;
+}
+
+.tab-btn:hover {
+  color: #667eea;
+}
+
+.tab-content {
+  display: none;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.tab-content h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 10px;
+}
+
+/* ============================================
+   FORMS
+   ============================================ */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+  margin-bottom: -10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+select {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1.5px solid #ddd;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+select {
+  cursor: pointer;
+  background-color: white;
+}
+
+.amount-input {
+  position: relative;
+}
+
+.amount-input input {
+  padding-right: 50px;
+}
+
+.currency {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-weight: 600;
+}
+
+small {
+  color: #999;
+  font-size: 12px;
+  margin-top: -8px;
+  display: block;
+}
+
+.photo-upload {
+  position: relative;
+  border: 2px dashed #667eea;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  background: #f9f9f9;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.photo-upload:hover,
+.photo-upload:focus {
+  background: #f0f4ff;
+  border-color: #764ba2;
+}
+
+.photo-upload input[type="file"] {
+  display: none;
+}
+
+.upload-hint {
+  color: #667eea;
+  font-weight: 500;
+  display: block;
+}
+
+#preview {
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-weight: normal;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.checkbox input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #667eea;
+}
+
+.checkbox span {
+  color: #333;
+}
+
+/* ============================================
+   FORM ACTIONS
+   ============================================ */
+.form-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-save,
+.btn-reset,
+.btn-export {
+  padding: 14px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+  min-width: 150px;
+}
+
+.btn-save {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.btn-save:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+}
+
+.btn-save:active {
+  transform: translateY(0);
+}
+
+.btn-save:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-reset {
+  background: #f0f0f0;
+  color: #333;
+  flex: 1;
+}
+
+.btn-reset:hover {
+  background: #e0e0e0;
+}
+
+.btn-export {
+  background: #25d366;
+  color: white;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.btn-export:hover {
+  background: #1fa853;
+  transform: translateY(-2px);
+}
+
+/* ============================================
+   STATS
+   ============================================ */
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.stat-card h3 {
+  font-size: 14px;
+  margin-bottom: 8px;
+  opacity: 0.9;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* ============================================
+   TRANSACTIONS LIST
+   ============================================ */
+.transactions-list {
+  margin-top: 15px;
+}
+
+.transaction-item {
+  background: #f9f9f9;
+  padding: 15px;
+  border-left: 4px solid #667eea;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  transition: all 0.3s ease;
+}
+
+.transaction-item:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.transaction-item p {
+  margin: 5px 0;
+  color: #333;
+}
+
+.transaction-date {
+  color: #999;
+  font-size: 12px;
+}
+
+.transaction-amount {
+  font-weight: 700;
+  color: #667eea;
+  font-size: 15px;
+}
+
+.empty-message {
+  text-align: center;
+  color: #999;
+  padding: 20px;
+}
+
+/* ============================================
+   MEMBERS LIST
+   ============================================ */
+.members-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.member-card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  border-left: 4px solid #667eea;
+  transition: all 0.3s ease;
+}
+
+.member-card:hover {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+
+.member-name {
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.member-contact {
+  font-size: 12px;
+  color: #999;
+}
+
+.members-info {
+  text-align: center;
+  color: #666;
+  padding: 15px;
+  background: #f0f4ff;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* ============================================
+   ABOUT CONTENT
+   ============================================ */
+.about-content {
+  line-height: 1.8;
+}
+
+.about-content h3 {
+  color: #667eea;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.about-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-content li {
+  padding: 8px 0;
+  padding-left: 25px;
+  position: relative;
+  color: #333;
+}
+
+.about-content li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-weight: bold;
+}
+
+/* ============================================
+   HELP CENTER
+   ============================================ */
+.help-box {
+  background: #f9f9f9;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 10px;
+  border-left: 4px solid #667eea;
+}
+
+.help-box h3 {
+  margin-bottom: 8px;
+  color: #333;
+  font-size: 16px;
+}
+
+.help-box p {
+  color: #666;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.contact-links {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-btn.phone {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.contact-btn.whatsapp {
+  background: #e8f5e9;
+  color: #25d366;
+}
+
+.contact-btn.sms {
+  background: #fff3e0;
+  color: #f57c00;
+}
+
+.contact-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.faq-box {
+  background: #f9f9f9;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 10px;
+  border-left: 4px solid #667eea;
+}
+
+.faq-box h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+details {
+  margin-bottom: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+details:last-child {
+  border-bottom: none;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #333;
+  padding: 12px;
+  background: white;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+summary:hover {
+  background: #f0f4ff;
+}
+
+summary::-webkit-details-marker {
+  color: #667eea;
+}
+
+details p {
+  padding: 10px 12px;
+  color: #666;
+  font-size: 14px;
+  background: white;
+}
+
+/* ============================================
+   MODAL
+   ============================================ */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  animation: fadeIn 0.3s ease-out;
+  overflow-y: auto;
+}
+
+.modal-content {
+  background-color: white;
+  margin: 5% auto;
+  padding: 30px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+  text-align: center;
+  position: relative;
+  animation: slideIn 0.3s ease-out;
+}
+
+.modal-content h3 {
+  color: #667eea;
+  margin-bottom: 15px;
+}
+
+#modalPhoto {
+  width: 100%;
+  max-height: 400px;
+  border-radius: 10px;
+  margin: 15px 0;
+  object-fit: cover;
+  border: 1px solid #ddd;
+}
+
+#modalInfo {
+  color: #666;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.close-modal {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #999;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.close-modal:hover {
+  color: #333;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+.footer {
+  margin-top: 40px;
+  padding: 30px 0;
+  border-top: 2px solid #eee;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-section h4 {
+  color: #667eea;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section li {
+  padding: 5px 0;
+}
+
+.footer-section a {
+  color: #666;
+  text-decoration: none;
+  font-size: 13px;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #667eea;
+  text-decoration: underline;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .header h1 {
+    font-size: 26px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tabs {
+    gap: 5px;
+  }
+
+  .tab-btn {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .btn-save,
+  .btn-reset,
+  .btn-export {
+    flex: 1;
+    min-width: auto;
+  }
+
+  .members-list {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 15px;
+    border-radius: 12px;
+    max-width: 100%;
+  }
+
+  .header h1 {
+    font-size: 22px;
+  }
+
+  .tabs {
+    gap: 3px;
+  }
+
+  .tab-btn {
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+
+  .stats-container {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-value {
+    font-size: 20px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"],
+  input[type="number"],
+  select {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+
+  .modal-content {
+    width: 95%;
+    margin: 20% auto;
+    padding: 20px;
+  }
+}
+
+/* ============================================
+   ACCESSIBILITY
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: more) {
+  .tab-btn.active {
+    text-decoration: underline;
+  }
+
+  button {
+    border: 2px solid currentColor;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  }
+
+  .container {
+    background: #0f3460;
+    color: #e0e0e0;
+  }
+
+  .header h1,
+  label,
+  .transaction-item p {
+    color: #e0e0e0;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"],
+  input[type="number"],
+  select {
+    background: #1a1a2e;
+    color: #e0e0e0;
+    border-color: #667eea;
+  }
+
+  .info-box,
+  .tab-content h2,
+  .help-box,
+  .faq-box {
+    background: #1a1a2e;
+    color: #e0e0e0;
+  }
+</style>
+		<script>
+		/* ============================================
+   WOLOKOSO SAVING GROUP - JAVASCRIPT
+   Enhanced with SEO & Google Search Console Features
+   ============================================ */
+
+// ============================================
+// INITIALIZATION & DOM ELEMENTS
+// ============================================
+const photoInput = document.getElementById("photo");
+const preview = document.getElementById("preview");
+const modal = document.getElementById("photoModal");
+const modalPhoto = document.getElementById("modalPhoto");
+const modalInfo = document.getElementById("modalInfo");
+const closeModal = document.querySelector(".close-modal");
+const tabBtns = document.querySelectorAll(".tab-btn");
+const tabContents = document.querySelectorAll(".tab-content");
+const savingForm = document.getElementById("savingForm");
+
+// ============================================
+// PHOTO PREVIEW - LOCAL
+// ============================================
+photoInput.addEventListener("change", function () {
+  const file = this.files[0];
+
+  if (file) {
+    // Validate file size (max 5MB)
+    const maxSize = 5 * 1024 * 1024;
+    if (file.size > maxSize) {
+      alert("❌ File size exceeds 5MB. Please choose a smaller file.");
+      this.value = "";
+      preview.style.display = "none";
+      return;
+    }
+
+    // Validate file type
+    const validTypes = ["image/jpeg", "image/png", "image/gif", "image/webp"];
+    if (!validTypes.includes(file.type)) {
+      alert("❌ Invalid file type. Please upload JPG, PNG, GIF, or WebP.");
+      this.value = "";
+      preview.style.display = "none";
+      return;
+    }
+
+    const reader = new FileReader();
+
+    reader.onload = function () {
+      preview.style.display = "block";
+      preview.src = reader.result;
+      preview.alt = "Selected payment receipt";
+      
+      // Store for later use
+      localStorage.setItem("lastPhotoPreview", reader.result);
+    };
+
+    reader.onerror = function () {
+      alert("❌ Error reading file. Please try again.");
+    };
+
+    reader.readAsDataURL(file);
+  }
+});
+
+// ============================================
+// TAB SWITCHING
+// ============================================
+tabBtns.forEach(btn => {
+  btn.addEventListener("click", function () {
+    const tabName = this.getAttribute("data-tab");
+
+    // Hide all tabs
+    tabContents.forEach(content => {
+      content.classList.remove("active");
+    });
+
+    // Remove active from all buttons
+    tabBtns.forEach(b => {
+      b.classList.remove("active");
+      b.setAttribute("aria-selected", "false");
+    });
+
+    // Show selected tab
+    document.getElementById(tabName).classList.add("active");
+    this.classList.add("active");
+    this.setAttribute("aria-selected", "true");
+
+    // Track tab view for Google Analytics
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'tab_click', {
+        'tab_name': tabName,
+        'timestamp': new Date().toISOString()
+      });
+    }
+
+    // Store last visited tab
+    localStorage.setItem("lastTab", tabName);
+  });
+
+  // Keyboard accessibility for tabs
+  btn.addEventListener("keydown", function (e) {
+    let index = Array.from(tabBtns).indexOf(this);
+    let newIndex;
+
+    if (e.key === "ArrowRight") {
+      newIndex = (index + 1) % tabBtns.length;
+      tabBtns[newIndex].focus();
+      tabBtns[newIndex].click();
+    } else if (e.key === "ArrowLeft") {
+      newIndex = (index - 1 + tabBtns.length) % tabBtns.length;
+      tabBtns[newIndex].focus();
+      tabBtns[newIndex].click();
+    }
+  });
+});
+
+// ============================================
+// FORM SUBMIT - ENHANCED
+// ============================================
+savingForm.addEventListener("submit", function(e){
+  e.preventDefault();
+
+  const form = this;
+  const formData = {
+    date: form.date.value,
+    name: form.name.value,
+    email: form.email.value,
+    phone: form.phone.value,
+    amount: form.amount.value,
+    paymentMethod: form.paymentMethod.value,
+    timestamp: new Date().toISOString()
+  };
+
+  // Validate all fields
+  if (!formData.date || !formData.name || !formData.email || 
+      !formData.phone || !formData.amount || !formData.paymentMethod) {
+    alert("❌ Please fill all required fields!");
+    return;
+  }
+
+  // Validate email format
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(formData.email)) {
+    alert("❌ Please enter a valid email address!");
+    return;
+  }
+
+  // Validate phone format
+  const phoneRegex = /^256\d{9}$/;
+  if (!phoneRegex.test(formData.phone.replace(/\D/g, ''))) {
+    alert("❌ Please enter a valid phone number (256...)!");
+    return;
+  }
+
+  const submitBtn = form.querySelector(".btn-save");
+  submitBtn.disabled = true;
+  submitBtn.innerHTML = "⏳ Processing...";
+
+  // Send to admin
+  emailjs.send("service_y17uayu", "template_ylnzyuf", {
+    date: formData.date,
+    name: formData.name,
+    email: formData.email,
+    phone: formData.phone,
+    amount: formData.amount,
+    paymentMethod: formData.paymentMethod,
+    to_email: "mutuyaabdullah849@gmail.com"
+  })
+  .then(() => {
+    // Send auto-reply to member
+    emailjs.send("service_y17uayu", "template_7pillkf", {
+      name: formData.name,
+      email: formData.email,
+      message: `Thank you for saving UGX ${parseInt(formData.amount).toLocaleString()}. Your savings are being processed. We will confirm within 24 hours. Remember, saving can change someone's priority! 💪`
+    });
+
+    // Save to local storage
+    saveTransaction(formData);
+
+    // Track form submission
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'form_submit', {
+        'amount': formData.amount,
+        'payment_method': formData.paymentMethod
+      });
+    }
+
+    alert("✅ Saved successfully to wolokososavinggroup@gmail.com! Check your email for confirmation.");
+    form.reset();
+    preview.style.display = "none";
+    submitBtn.disabled = false;
+    submitBtn.innerHTML = "💾 Save Money";
+
+  }, (error) => {
+    console.error("Email sending error:", error);
+    alert("❌ Failed to send. Please try again or contact support.");
+    submitBtn.disabled = false;
+    submitBtn.innerHTML = "💾 Save Money";
+    
+    // Track error
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'form_error', {
+        'error_type': 'email_send_failed'
+      });
+    }
+  });
+});
+
+// ============================================
+// TRANSACTION MANAGEMENT
+// ============================================
+function saveTransaction(data) {
+  let transactions = JSON.parse(localStorage.getItem("transactions")) || [];
+
+  transactions.unshift({
+    id: Date.now(),
+    date: data.date,
+    name: data.name,
+    email: data.email,
+    phone: data.phone,
+    amount: data.amount,
+    paymentMethod: data.paymentMethod,
+    timestamp: data.timestamp,
+    status: "pending" // pending, confirmed, failed
+  });
+
+  localStorage.setItem("transactions", JSON.stringify(transactions));
+  updateStats();
+}
+
+function updateStats() {
+  let transactions = JSON.parse(localStorage.getItem("transactions")) || [];
+
+  let totalSaved = 0;
+  transactions.forEach(t => {
+    totalSaved += parseInt(t.amount) || 0;
+  });
+
+  const averageSaved = transactions.length > 0 ? Math.floor(totalSaved / transactions.length) : 0;
+
+  document.getElementById("totalSaved").textContent = totalSaved.toLocaleString() + " UGX";
+  document.getElementById("totalTransactions").textContent = transactions.length;
+  document.getElementById("averageSaved").textContent = averageSaved.toLocaleString() + " UGX";
+
+  if (transactions.length > 0) {
+    document.getElementById("lastSaved").textContent = new Date(transactions[0].timestamp).toLocaleDateString("en-UG");
+  }
+
+  displayTransactions(transactions);
+}
+
+function displayTransactions(transactions) {
+  const listContainer = document.getElementById("transactionsList");
+
+  if (transactions.length === 0) {
+    listContainer.innerHTML = '<p class="empty-message">No transactions yet. Start saving!</p>';
+    return;
+  }
+
+  let html = '';
+  transactions.forEach((t, index) => {
+    const statusClass = t.status || 'pending';
+    html += `
+      <div class="transaction-item" data-id="${t.id}">
+        <p><strong>${t.name}</strong> - ${t.paymentMethod}</p>
+        <p class="transaction-amount">UGX ${parseInt(t.amount).toLocaleString()}</p>
+        <p class="transaction-date">📅 Saved on: ${new Date(t.date).toLocaleDateString("en-UG")}</p>
+        <p class="transaction-status" style="font-size: 12px; color: #667eea;">Status: ${statusClass}</p>
+      </div>
+    `;
+  });
+
+  listContainer.innerHTML = html;
+}
+
+// ============================================
+// EXPORT TO CSV
+// ============================================
+function exportTransactions() {
+  let transactions = JSON.parse(localStorage.getItem("transactions")) || [];
+
+  if (transactions.length === 0) {
+    alert("❌ No transactions to export!");
+    return;
+  }
+
+  // Create CSV header
+  let csv = "Date,Name,Email,Phone,Amount (UGX),Payment Method,Status\n";
+
+  // Add transaction rows
+  transactions.forEach(t => {
+    const row = [
+      t.date,
+      t.name,
+      t.email,
+      t.phone,
+      t.amount,
+      t.paymentMethod,
+      t.status || 'pending'
+    ].map(field => `"${field}"`).join(",");
+    
+    csv += row + "\n";
+  });
+
+  // Create blob and download
+  const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+  const link = document.createElement("a");
+  const url = URL.createObjectURL(blob);
+
+  link.setAttribute("href", url);
+  link.setAttribute("download", `wolokoso-transactions-${new Date().toISOString().split('T')[0]}.csv`);
+  link.style.visibility = "hidden";
+
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+
+  // Track export
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'csv_export', {
+      'transactions_count': transactions.length
+    });
+  }
+}
+
+// ============================================
+// MEMBERS MANAGEMENT
+// ============================================
+function loadMembers() {
+  // Mock member data - replace with actual API call
+  const mockMembers = [
+    { name: "John Katumba", email: "john@example.com", joinDate: "2025-01-15" },
+    { name: "Sarah Namwase", email: "sarah@example.com", joinDate: "2025-02-10" },
+    { name: "Peter Okello", email: "peter@example.com", joinDate: "2025-03-05" }
+  ];
+
+  const membersList = document.getElementById("membersList");
+  const totalMembers = document.getElementById("totalMembers");
+
+  if (mockMembers.length === 0) {
+    membersList.innerHTML = '<p class="empty-message">No members yet.</p>';
+    totalMembers.textContent = "0";
+    return;
+  }
+
+  let html = '';
+  mockMembers.forEach(member => {
+    html += `
+      <div class="member-card">
+        <p class="member-name">👤 ${member.name}</p>
+        <p class="member-contact">📧 ${member.email}</p>
+        <p class="member-contact">📅 Joined: ${new Date(member.joinDate).toLocaleDateString("en-UG")}</p>
+      </div>
+    `;
+  });
+
+  membersList.innerHTML = html;
+  totalMembers.textContent = mockMembers.length;
+}
+
+// ============================================
+// MODAL MANAGEMENT
+// ============================================
+closeModal.addEventListener("click", function () {
+  modal.style.display = "none";
+});
+
+closeModal.addEventListener("keydown", function (e) {
+  if (e.key === "Enter" || e.key === " ") {
+    modal.style.display = "none";
+  }
+});
+
+window.addEventListener("click", function (event) {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+});
+
+// ============================================
+// ANNOUNCEMENT MANAGEMENT
+// ============================================
+function closeAnnouncement() {
+  const banner = document.getElementById("announcement");
+  banner.style.display = "none";
+  localStorage.setItem("announcementClosed", "true");
+}
+
+// ============================================
+// AMOUNT VALIDATION
+// ============================================
+document.querySelector('input[name="amount"]').addEventListener("input", function () {
+  const value = parseInt(this.value);
+  if (value && value < 5000) {
+    this.value = 5000;
+  } else if (value && value > 1000000) {
+    this.value = 1000000;
+  }
+});
+
+// ============================================
+// PHONE NUMBER FORMATTING
+// ============================================
+document.querySelector('input[name="phone"]').addEventListener("input", function () {
+  let value = this.value.replace(/\D/g, '');
+  
+  // Ensure starts with 256
+  if (!value.startsWith('256')) {
+    if (value.startsWith('0')) {
+      value = '256' + value.substring(1);
+    } else if (value.length > 0) {
+      value = '256' + value;
+    }
+  }
+  
+  this.value = value.substring(0, 12);
+});
+
+// ============================================
+// PHOTO UPLOAD AREA CLICK
+// ============================================
+document.querySelector(".photo-upload").addEventListener("click", function () {
+  photoInput.click();
+});
+
+// Keyboard accessibility for photo upload
+document.querySelector(".photo-upload").addEventListener("keydown", function (e) {
+  if (e.key === "Enter" || e.key === " ") {
+    e.preventDefault();
+    photoInput.click();
+  }
+});
+
+// ============================================
+// INITIALIZE PAGE
+// ============================================
+window.addEventListener("DOMContentLoaded", function () {
+  updateStats();
+  loadMembers();
+
+  // Restore last visited tab
+  const lastTab = localStorage.getItem("lastTab");
+  if (lastTab) {
+    const btn = document.querySelector(`[data-tab="${lastTab}"]`);
+    if (btn) btn.click();
+  }
+
+  // Hide announcement if previously closed
+  if (localStorage.getItem("announcementClosed")) {
+    document.getElementById("announcement").style.display = "none";
+  }
+
+  // Track page view
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'page_view', {
+      'page_title': document.title,
+      'page_path': window.location.pathname
+    });
+  }
+
+  // Log page load time
+  const perfData = window.performance.timing;
+  const pageLoadTime = perfData.loadEventEnd - perfData.navigationStart;
+  console.log("Page load time: " + pageLoadTime + "ms");
+});
+
+// ============================================
+// SERVICE WORKER (FOR PWA)
+// ============================================
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service-worker.js').then(() => {
+    console.log('Service Worker registered successfully');
+  }).catch((error) => {
+    console.log('Service Worker registration failed:', error);
+  });
+}
+
+// ============================================
+// BREADCRUMB SCHEMA
+// ============================================
+function createBreadcrumbSchema() {
+  const breadcrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://yourwebsite.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Save Money",
+        "item": "https://yourwebsite.com#form"
+      }
+    ]
+  };
+
+  const script = document.createElement('script');
+  script.type = 'application/ld+json';
+  script.textContent = JSON.stringify(breadcrumb);
+  document.head.appendChild(script);
+}
+
+// ============================================
+// PERFORMANCE MONITORING
+// ============================================
+function monitorPerformance() {
+  if ('PerformanceObserver' in window) {
+    try {
+      const observer = new PerformanceObserver((list) => {
+        for (const entry of list.getEntries()) {
+          console.log(`${entry.name}: ${entry.duration.toFixed(2)}ms`);
+        }
+      });
+
+      observer.observe({ entryTypes: ['measure', 'navigation'] });
+    } catch (e) {
+      console.log('Performance monitoring not supported');
+    }
+  }
+}
+
+// ============================================
+// SEARCH ENGINE SITEMAP GENERATION
+// ============================================
+function generateSitemap() {
+  const sitemapData = {
+    urls: [
+      { loc: "https://yourwebsite.com", priority: "1.0" },
+      { loc: "https://yourwebsite.com#form", priority: "0.9" },
+      { loc: "https://yourwebsite.com#stats", priority: "0.8" },
+      { loc: "https://yourwebsite.com#help", priority: "0.7" }
+    ]
+  };
+
+  return sitemapData;
+}
+
+// Initialize on load
+window.addEventListener("load", function () {
+  createBreadcrumbSchema();
+  monitorPerformance();
+});
+
+// ============================================
+// CONTACT TRACKING
+// ============================================
+document.querySelectorAll(".contact-btn").forEach(btn => {
+  btn.addEventListener("click", function () {
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'contact_interaction', {
+        'contact_type': this.className.split(' ')[1],
+        'phone': this.href
+      });
+    }
+  });
+});
+		</script>
